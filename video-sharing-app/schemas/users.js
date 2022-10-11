@@ -11,6 +11,8 @@ export default{
         },
         {
             name: 'image',
+            title: 'Image',
+            type: 'String',
         }
     ]
 }
