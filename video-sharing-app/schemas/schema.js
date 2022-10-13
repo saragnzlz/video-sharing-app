@@ -4,7 +4,7 @@ import createSchema from 'part:@sanity/base/schema-creator'
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 import post from './post';
-import users from './users';
+import user from './user';
 import postedBy from './postedBy';
 import comment from './comment';
 import { useSyncExternalStore } from 'react';
@@ -17,6 +17,6 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    post, users, comment, postedBy
+    post, user, comment, postedBy
   ]),
 })
